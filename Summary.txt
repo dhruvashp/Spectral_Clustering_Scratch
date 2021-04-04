@@ -1,0 +1,28 @@
+Summary :
+
+Summary can be seen from the snapshot of the code output of file HW4_Minimizing_Parameters (snapshot in file Result_Summary)
+
+For aca2
+Minimum Error          : 7.62 %
+Gamma                  : 1
+k                      : 5
+
+
+For aca5
+Minimum Error          : 7.43 %
+Gamma                  : 26
+k                      : 6
+
+Note, for aca5, Gamma = 2 and k = 6 gives us an error of 7.55 % (from its error matrix)
+
+Thus, if a parameter for both aca2 and aca5 is to be selected then,
+
+Gamma  =    around 1 to 2
+k      =    around 5 to 6
+
+
+
+IMPORTANT NOTE :
+Due to runtime constraints, we could only restart K-Means a single time for each gamma and k value, since we had a large set of values to optimize over. If restart more than 1 would have been selected, the run time for both files would have been around 18-20 hours. Thus these results may not correspond to the global optimal, but surely do correspond to the local optimal. Again the only reason why more restarts weren't chosen to ensure global convergence was due to extremely large run times. 
+
+
